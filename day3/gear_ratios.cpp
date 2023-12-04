@@ -220,9 +220,9 @@ int	main(int argc, char **argv)
 	map.insert(map.begin(), std::vector<char>(map[0].size() - 2, '.'));
 	map.push_back(std::vector<char>(map[0].size() - 2, '.'));
 	size_t	sum = 0;
-	for (int j = 0; j < map.size() - 1; j++)
+	for (int j = 1; j < map.size() - 1; j++)
 	{
-		for (int i = 0; i < map[j].size() - 1; i++)
+		for (int i = 1; i < map[j].size() - 1; i++)
 		{
 			if (map[j][i] == '*')
 			{
